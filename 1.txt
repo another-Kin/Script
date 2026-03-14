@@ -13,8 +13,8 @@ getgenv().Config = {
         ["Godhuman"] = true
     },
     Webhook = {
-        ["Enabled"] = false,
-        ["Url"] = ""
+        ["Enabled"] = true,
+        ["Url"] = "https://discord.com/api/webhooks/1480927259895271517/p01Wgu73LoqkclPY6CKdgJfZltIlpuL9vDKDR_YTOX8NUmM_u66V7uYaJgXbGL_sNEMR"
     }
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/d6c7959dcc94cd24467080d82a56dcf9.lua"))()
