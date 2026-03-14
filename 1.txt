@@ -1,10 +1,10 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 getgenv().Key = "d6a5a39be5a0e10c82a5cb56"
     getgenv().SettingFarm ={
-        ["Multiple Attack"] = false, --// this is fast attack added by me
-        ["Hide UI"] = false,
+        ["Hide UI"] = true,
+        ["FPS Boost"] = true,
         ["Reset Teleport"] = {
-            ["Enabled"] = false,
+            ["Enabled"] = true,
             ["Delay Reset"] = 3,
             ["Item Dont Reset"] = {
                 ["Fruit"] = {
@@ -20,9 +20,14 @@ getgenv().Key = "d6a5a39be5a0e10c82a5cb56"
         ["White Screen"] = true,
         ["Lock Fps"] = {
             ["Enabled"] = true,
-            ["FPS"] = 10,
+            ["FPS"] = 20,
         },
         ["Get Items"] = {
+            ["Rainbow Haki"] = true,
+            ["Kabucha"] = true,
+            ["Legendary Sword"] = true, --- buy 3 legendary swords
+            ["Auto TTK"] = true,  ---full 3 ledendary sword get true triple katana
+            ["Hallow Scythe"] = true,
             ["Saber"] = true,
             ["Godhuman"] =  true,
             ["Skull Guitar"] = true,
@@ -30,25 +35,27 @@ getgenv().Key = "d6a5a39be5a0e10c82a5cb56"
             ["Cursed Dual Katana"] = true,
             ["Upgrade Race V2-V3"] = true,
             ["Auto Pull Lever"] = true,
-            ["Shark Anchor"] = true, --- if have cdk,sg,godhuman
+            ["Shark Anchor"] = false, --- if have cdk,sg,godhuman ---dang loi anh em khong nen su dung
+            ["Dojo Trainer"] = true, --- if have dragon talon 500 mastery
         },
         ["Get Rare Items"] = {
-            ["Rengoku"] = false,
-            ["Dragon Trident"] = false, 
+            ["Auto Get Cyborg"] = true, --- co the doi thanh ghoul tuy theo so thich
+            ["Rengoku"] = true,
+            ["Dragon Trident"] = true, 
             ["Pole (1st Form)"] = false,
             ["Gravity Blade"]  = true,
         },
         ["Farm Fragments"] = {
             ["Enabled"]  = true,
-            ["Fragment"] = 50000,
+            ["Fragment"] = 10000,
         },
         ["Auto Chat"] = {
             ["Enabled"] = false,
-            ["Text"] = "Config that cut tay",
+            ["Text"] = "k.a.i t.u.n c.ủ.a mun",
         },
         ["Auto Summon Rip Indra"] = true, --- auto buy haki and craft haki legendary 
         ["Select Hop"] = { -- 70% will have it
-            ["Hop Server If Have Player Near"] = false, 
+            ["Hop Server If Have Player Near"] = true, 
             ["Hop Find Rip Indra Get Valkyrie Helm or Get Tushita"] = true, 
             ["Hop Find Dough King Get Mirror Fractal"] = true,
             ["Hop Find Raids Castle [CDK]"] = true,
@@ -58,7 +65,7 @@ getgenv().Key = "d6a5a39be5a0e10c82a5cb56"
             ["Hop Find Mirage [ Pull Lever ]"] = true,
         },
         ["Farm Mastery"] = {
-            ["Melee"] = false,
+            ["Melee"] = true,
             ["Sword"] = true,
         },
         ["Buy Haki"] = {
@@ -71,13 +78,10 @@ getgenv().Key = "d6a5a39be5a0e10c82a5cb56"
             ["Enabled"] = true, -- Auto Buy Fruit in Shop Mirage and Normal
             ["Fruit"] = {"Leopard-Leopard","Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas"},
         },
-        ["Lock Fruit"] = {},
+        ["Lock Fruit"] = {"Dragon-Dragon"},
         ["Webhook"] = {
             ["Enabled"] = true,
             ["WebhookUrl"] = "https://discord.com/api/webhooks/1480927259895271517/p01Wgu73LoqkclPY6CKdgJfZltIlpuL9vDKDR_YTOX8NUmM_u66V7uYaJgXbGL_sNEMR",
         }
     }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-kaitunBF.lua"))()
-task.delay(6,function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiHub111/BloxFruit/refs/heads/main/ConfigBanana"))()
-end)
