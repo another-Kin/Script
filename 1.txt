@@ -25,8 +25,8 @@ getgenv().Key = "d6a5a39be5a0e10c82a5cb56"
         ["Get Items"] = {
             ["Rainbow Haki"] = true,
             ["Kabucha"] = true,
-            ["Legendary Sword"] = true, --- buy 3 legendary swords
-            ["Auto TTK"] = true,  ---full 3 ledendary sword get true triple katana
+            ["Legendary Sword"] = false, --- buy 3 legendary swords
+            ["Auto TTK"] = false,  ---full 3 ledendary sword get true triple katana
             ["Hallow Scythe"] = true,
             ["Saber"] = true,
             ["Godhuman"] =  true,
@@ -75,10 +75,10 @@ getgenv().Key = "d6a5a39be5a0e10c82a5cb56"
             ["Observation"] = true,
         },
         ["Sniper Fruit Shop"] = {
-            ["Enabled"] = true, -- Auto Buy Fruit in Shop Mirage and Normal
+            ["Enabled"] = false, -- Auto Buy Fruit in Shop Mirage and Normal
             ["Fruit"] = {"Leopard-Leopard","Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas"},
         },
-        ["Lock Fruit"] = {"Dragon-Dragon"},
+        ["Lock Fruit"] = {""},
         ["Webhook"] = {
             ["Enabled"] = true,
             ["WebhookUrl"] = "https://discord.com/api/webhooks/1480927259895271517/p01Wgu73LoqkclPY6CKdgJfZltIlpuL9vDKDR_YTOX8NUmM_u66V7uYaJgXbGL_sNEMR",
