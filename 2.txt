@@ -1,8 +1,3 @@
-getgenv().Config = {
-    Team = "Pirates", -- uh not work now
-    Settings = {
-        ToolFarm = "Melee",
-        HopDelay = 2
-    }
-}
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/638cb8130072d62781731a34792acec1.lua"))()
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().Key = "d6a5a39be5a0e10c82a5cb56" 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))() 
