@@ -1,20 +1,32 @@
-getgenv().Config = {
+Config = {
     Team = "Pirates",
-    FarmConfig = {
-        ["Out game when done all"] = true,
-        ["Bypass Teleport"] = true,
-        ["Double Quest(RISK)"] = false
+    FPS = 3,
+    Configuration = {
+        HopWhenIdle = true,
+        AutoHop = true,
+        AutoHopDelay = 60 * 60,
+        FpsBoost = true,
+        blackscreen = true
     },
     Items = {
-        ["Saber"] = true,
-        ["Pole (1st form)"] = true,
-        ["Skull Guitar"] = true,
-        ["Cursed Dual Katana"] = true,
-        ["Godhuman"] = true
+
+        -- Melees 
+        AutoFullyMelees = true,
+
+        -- Swords 
+        Saber = true,
+        CursedDualKatana = true,
+
+        -- Guns 
+        SoulGuitar = true,
+
+        -- Upgrades 
+
+        RaceV2 = true
+
     },
-    Webhook = {
-        ["Enabled"] = true,
-        ["Url"] = "https://discord.com/api/webhooks/1480927259895271517/p01Wgu73LoqkclPY6CKdgJfZltIlpuL9vDKDR_YTOX8NUmM_u66V7uYaJgXbGL_sNEMR"
+    Settings = {
+        StayInSea2UntilHaveDarkFragments = true
     }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/d6c7959dcc94cd24467080d82a56dcf9.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sucvatthieunang/djtme/refs/heads/main/module"))()
